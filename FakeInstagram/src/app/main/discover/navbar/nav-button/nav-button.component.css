@@ -1,0 +1,12 @@
+#navbarIcon {
+	float:left;
+}
+
+#navbarText {
+	float:right;
+}
+
+button {
+	display: flex;
+	align-items: center;
+}
