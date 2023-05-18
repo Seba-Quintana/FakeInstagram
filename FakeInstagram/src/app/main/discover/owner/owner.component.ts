@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-discover',
+  selector: 'app-owner',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './discover.component.html',
-  styleUrls: ['./discover.component.css']
+  template: `
+  
+  `,
+  styleUrls: ['./owner.component.css']
 })
-export class DiscoverComponent {
+export class OwnerComponent {
 
 }
