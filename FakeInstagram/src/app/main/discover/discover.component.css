@@ -1,0 +1,6 @@
+.navbar {
+	border: 1pt solid black;
+	display: flex;
+	justify-content: flex-end;
+	
+}
