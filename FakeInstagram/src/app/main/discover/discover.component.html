@@ -1,4 +1,5 @@
 <div id="list-posts">
     <app-post *ngFor="let dataPost of this.listPosts" [post]="dataPost"> </app-post>
+    <app-owner *ngFor="let dataOwner of this.listPosts" [owner]="dataOwner"></app-owner>
 </div>
 

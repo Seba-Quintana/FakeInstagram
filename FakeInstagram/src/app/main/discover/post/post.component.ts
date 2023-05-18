@@ -15,5 +15,5 @@ import { PostInterface } from 'src/app/interfaces/post-interface';
 })
 export class PostComponent {
   @Input() post!:PostInterface;
-
+  
 }

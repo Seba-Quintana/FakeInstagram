@@ -7,8 +7,14 @@ import { PostInterface } from '../interfaces/post-interface';
 export class PostService {
   listPost : PostInterface[] =[{
     url:"url",
+    image : "image",
+    name : "name",
+    user : "user",
   },{
-    url:"url"
+    url:"url",
+    image : "image",
+    name : "name",
+    user : "user",
   }]
   
   getPosts(){
