@@ -15,9 +15,17 @@ import { NavbarComponent } from "./navbar/navbar.component";
   <nav class="navbar">
     <app-navbar></app-navbar>
   </nav>
-  <div id="list-posts">
-    <app-post *ngFor="let dataPost of this.listPosts" [post]="dataPost"> </app-post>
-    <app-owner *ngFor="let dataOwner of this.listPosts" [owner]="dataOwner"></app-owner>
+  <p class = "discover">Discover</p>
+  <p class = "subtitle">What’s new today</p>
+  <div class="list-posts">
+    <div class="div-posts">
+      <div class ="div-component">
+        <app-post class="post-component" *ngFor="let dataPost of this.listPosts" [post]="dataPost"> </app-post>
+      </div>
+      <div class = "div-component">
+        <app-owner class="owner-component" *ngFor="let dataOwner of this.listPosts" [owner]="dataOwner"></app-owner>
+      </div>
+    </div>
   </div>
   `,
   styleUrls: ['./discover.component.css']

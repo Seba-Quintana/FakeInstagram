@@ -4,3 +4,70 @@
 	justify-content: flex-end;
 	
 }
+
+.list-posts{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 0;
+	width: auto;
+	/* margin-top: 5%; */
+}
+
+.div-posts{
+	display: grid;
+	align-items: center;
+	width: 100%;
+	height: 50%;
+	border: 1pt solid black
+}
+
+.div-component{
+	display: flex;
+    width: auto;
+    height: auto;
+    /* justify-content: space-around; */
+    align-items: center;
+	border: 1pt solid black
+}
+
+.discover{
+left: 0%;
+right: -6.08%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 40px;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+}
+
+.subtitle{
+	/* position: absolute; */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 13px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.post-component{
+	margin-right: 2%;
+}
+
+.owner-component{
+	margin-right: 25%;
+}

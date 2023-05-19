@@ -6,12 +6,12 @@ import { PostInterface } from '../interfaces/post-interface';
 })
 export class PostService {
   listPost : PostInterface[] =[{
-    url:"url",
+    url:"assets/escaleraMecanica.jpeg",
     image : "image",
     name : "name",
     user : "user",
   },{
-    url:"url",
+    url:"assets/escaleraMecanica.jpeg",
     image : "image",
     name : "name",
     user : "user",

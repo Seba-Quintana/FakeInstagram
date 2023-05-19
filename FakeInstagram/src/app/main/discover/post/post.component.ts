@@ -8,7 +8,7 @@ import { PostInterface } from 'src/app/interfaces/post-interface';
   imports: [CommonModule],
   template: `
     <div class = "div-post">
-      <img src={{post.url}}>
+      <img class= "image-post" src={{post.url}}>
     </div>
   `,
   styleUrls: ['./post.component.css']

@@ -7,13 +7,15 @@ import { PostInterface } from 'src/app/interfaces/post-interface';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div id = "div-image">
+  <div class = "div-owner">
+    <div class = "div-image">
       <img src={{owner.image}}>
     </div>
-    <div id = "div-owner">
+    <div class = "div-ownerInfo">
       <p>{{owner.name}}</p>
       <p>{{owner.user}}</p>
     </div>
+  </div>
   `,
   styleUrls: ['./owner.component.css']
 })

@@ -1,0 +1,5 @@
+.div-owner{
+    border: 1pt solid black;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
