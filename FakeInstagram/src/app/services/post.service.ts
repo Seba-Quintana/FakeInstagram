@@ -15,6 +15,21 @@ export class PostService {
     image : "image",
     name : "name",
     user : "user",
+  },{
+    url:"assets/escaleraMecanica.jpeg",
+    image : "image",
+    name : "name",
+    user : "user",
+  },{
+    url:"assets/escaleraMecanica.jpeg",
+    image : "image",
+    name : "name",
+    user : "user",
+  },{
+    url:"assets/escaleraMecanica.jpeg",
+    image : "image",
+    name : "name",
+    user : "user",
   }]
   
   getPosts(){
