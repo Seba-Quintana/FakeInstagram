@@ -7,29 +7,29 @@ import { PostInterface } from '../interfaces/post-interface';
 export class PostService {
   listPost : PostInterface[] =[{
     url:"assets/escaleraMecanica.jpeg",
-    image : "image",
-    name : "name",
-    user : "user",
+    image : "assets/personaPerfil.jpeg",
+    name : "Santiago Varaldo",
+    user : "@santivaraldo",
+  },{
+    url:"assets/autoVerde.jpeg",
+    image : "assets/personaPerfil2.jpeg",
+    name : "Pepito Perez",
+    user : "@pperez",
+  },{
+    url:"assets/fusca.jpeg",
+    image : "assets/personaperfil3.jpeg",
+    name : "John Davis",
+    user : "@jdavis",
   },{
     url:"assets/escaleraMecanica.jpeg",
-    image : "image",
-    name : "name",
-    user : "user",
+    image : "assets/personaPerfil.jpeg",
+    name : "William Smith",
+    user : "@wsmith",
   },{
     url:"assets/escaleraMecanica.jpeg",
-    image : "image",
-    name : "name",
-    user : "user",
-  },{
-    url:"assets/escaleraMecanica.jpeg",
-    image : "image",
-    name : "name",
-    user : "user",
-  },{
-    url:"assets/escaleraMecanica.jpeg",
-    image : "image",
-    name : "name",
-    user : "user",
+    image : "assets/personaPerfil2.jpeg",
+    name : "Steve Fontarrosa",
+    user : "@sfontarrosa",
   }]
   
   getPosts(){

@@ -9,11 +9,11 @@ import { PostInterface } from 'src/app/interfaces/post-interface';
   template: `
   <div class = "div-owner">
     <div class = "div-image">
-      <img src={{owner.image}}>
+      <img  class = "image" src={{owner.image}}>
     </div>
     <div class = "div-ownerInfo">
-      <p>{{owner.name}}</p>
-      <p>{{owner.user}}</p>
+      <p class = "owner-name">{{owner.name}}</p>
+      <p class = "owner-user">{{owner.user}}</p>
     </div>
   </div>
   `,

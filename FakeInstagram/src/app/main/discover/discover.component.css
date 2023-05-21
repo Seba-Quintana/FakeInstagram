@@ -42,6 +42,11 @@
 	width: auto;
 	height: auto;
 	overflow: auto;
+	scrollbar-width: none;
+}
+
+.div-content::-webkit-scrollbar {
+	width: 0;
 }
 
 .app-card{
