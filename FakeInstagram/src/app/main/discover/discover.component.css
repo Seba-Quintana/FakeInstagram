@@ -1,0 +1,54 @@
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+.discover{
+	left: 0%;
+	right: -6.08%;
+	top: 0%;
+	bottom: 0%;
+
+	font-family: 'Comfortaa';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+
+	color: #000000;
+}
+
+.subtitle{
+	/* position: absolute; */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 13px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.div-content{
+	display: flex;
+	width: auto;
+	height: auto;
+	overflow: auto;
+	scrollbar-width: none;
+}
+
+.div-content::-webkit-scrollbar {
+	width: 0;
+}
+
+.app-card{
+	margin-right: 2%;
+}
