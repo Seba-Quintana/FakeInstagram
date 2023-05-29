@@ -10,7 +10,13 @@ import { ChatService } from '../chat.service';
   imports: [CommonModule],
   template: `
     
-  <section class="card-window" >
+  <section class="chat-window">
+    <div class="callout" data-closable>
+        <button class="close-button" aria-label="Close alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <h1>Chats</h1>
     <section class="chat" *ngFor="let chat of chats; let i = index"> 
       <img class="chat-image" src="{{chat.image}}"   alt="image not found">
       <h2 class="chat-name">{{chat.name}}</h2>
