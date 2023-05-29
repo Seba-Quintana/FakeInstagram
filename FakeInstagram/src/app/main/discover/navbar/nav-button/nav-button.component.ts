@@ -6,11 +6,11 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-	<a class="button">
+	<a href='DiscoverComponent' class="button">
 		<svg class="navbarIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
 		<h3 class="navbarText">Discover</h3>
 	</a>
-	<a class="button">
+	<a href='SearchComponent' class="button">
 		<svg class="navbarIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 4a6.5 6.5 0 0 1 6.5 6.5c0 1.62-.59 3.1-1.57 4.23l5.65 5.65l-.71.71l-5.65-5.65A6.469 6.469 0 0 1 9.5 17A6.5 6.5 0 0 1 3 10.5A6.5 6.5 0 0 1 9.5 4m0 1A5.5 5.5 0 0 0 4 10.5A5.5 5.5 0 0 0 9.5 16a5.5 5.5 0 0 0 5.5-5.5A5.5 5.5 0 0 0 9.5 5Z"/></svg>
 		<h3 class="navbarText">Search</h3>
 	</a>
