@@ -2,22 +2,20 @@ import { Routes } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { DiscoverComponent } from '../main/discover/discover.component';
 import { SearchComponent } from '../main/search/search.component';
+import { ProfileComponent } from '../main/profile/profile.component';
 
 const routeConfig: Routes = [
   {
     path: '',
-    component: AppComponent ,
-    title: 'App Page'
-  },
-  {
-    path: '/discover',
     component:DiscoverComponent,
-    title: 'Discover'
   },
   {
-    path: '/search',
+    path: 'SearchComponent',
     component: SearchComponent,
-    title: 'Search'
+  },
+  {
+	path: 'ProfileComponent',
+	component: ProfileComponent,
   }
 ];
 
