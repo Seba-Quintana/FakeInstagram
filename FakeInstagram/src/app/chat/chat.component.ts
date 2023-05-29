@@ -1,6 +1,7 @@
-import { Component} from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Chat} from '../chat';
+import { ChatService } from '../chat.service';
 
 
 @Component({
@@ -9,37 +10,22 @@ import {Chat} from '../chat';
   imports: [CommonModule],
   template: `
     
-    <div class=header-chat>Chats</div>
-    <div class=body-chat><section class="chats-containers" *ngFor="let Chat of Chat"></section>
-      <img class='person-image' src="{{Chat.image}}">
-      <p class='person-name'>{{Chat.name}}</p>
-      <p class ='person-lastMessage'>{{Chat.lastMessage}}</p>
-    </div>
+  <section class="card-window" >
+    <section class="chat" *ngFor="let chat of chats; let i = index"> 
+      <img class="chat-image" src="{{chat.image}}"   alt="image not found">
+      <h2 class="chat-name">{{chat.name}}</h2>
+      <p class="chat-last">{{chat.lastMessage}}</p>
+    </section>
+  </section> 
 
-    
   `,
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent {
-  chatContainer: Chat[]=[{
-    id: 1,
-    image: '',
-    name: 'James',
-    lastMessage: 'string',
-  },{
-    id: 2,
-    image: '',
-    name: 'Will',
-    lastMessage: 'string',
-  },{
-    id: 3,
-    image: '',
-    name: 'Beth',
-    lastMessage: 'string',
-  },{
-    id: 4,
-    image: '',
-    name: 'Rev',
-    lastMessage: 'string',
-  }]
+  chatService:ChatService=inject(ChatService);
+  chats: Chat[]=[]
+
+  constructor(){
+    this.chats=this.chatService.getAllChats()
+  }
 }
