@@ -4,7 +4,7 @@ import { PostComponent } from './post/post.component';
 import { PostService } from 'src/app/services/post.service';
 import { PostInterface } from 'src/app/interfaces/post-interface';
 import { OwnerComponent } from './owner/owner.component';
-import { NavbarComponent } from "./navbar/navbar.component";
+import { NavbarComponent } from '../navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 
 @Component({
