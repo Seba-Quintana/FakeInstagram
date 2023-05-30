@@ -10,11 +10,11 @@ const routeConfig: Routes = [
     component:DiscoverComponent,
   },
   {
-    path: 'SearchComponent',
+    path: 'search',
     component: SearchComponent,
   },
   {
-	path: 'ProfileComponent',
+	path: 'profile/:user',
 	component: ProfileComponent,
   }
 ];

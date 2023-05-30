@@ -35,5 +35,9 @@ export class PostService {
   getPosts(){
     return this.listPost;
   }
+
+  getPostsName(username: string | null): PostInterface[] | undefined {
+    return this.listPost.filter(post => post.user === username);
+  }  
 }
 

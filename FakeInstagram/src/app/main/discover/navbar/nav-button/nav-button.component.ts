@@ -23,7 +23,7 @@ import { RouterModule } from '@angular/router';
 		<svg class="navbarIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M128 28a100 100 0 0 0-87.47 148.5l-11.9 35.69a12 12 0 0 0 15.18 15.18l35.69-11.9A100 100 0 1 0 128 28Zm0 192a92 92 0 0 1-46.07-12.35a4.05 4.05 0 0 0-2-.54a3.93 3.93 0 0 0-1.27.21l-37.38 12.46a4 4 0 0 1-5.06-5.06l12.46-37.38a4 4 0 0 0-.33-3.27A92 92 0 1 1 128 220Z"/></svg>
 		<h3 class="navbarText">Chat</h3>
 	</a>
-	<a [routerLink]="['ProfileComponent']" class="button">
+	<a href="profile/@santivaraldo" class="button">
 		<svg class="navbarIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linejoin="round" d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><circle cx="12" cy="7" r="3"/></g></svg>
 		<h3 class="navbarText">Profile</h3>
 	</a>

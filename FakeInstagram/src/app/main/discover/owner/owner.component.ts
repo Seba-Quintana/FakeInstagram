@@ -6,7 +6,7 @@ import { PostInterface } from 'src/app/interfaces/post-interface';
   selector: 'app-owner',
   standalone: true,
   imports: [CommonModule],
-  template: `
+  template: ` <a href="/profile/{{owner.user}}">
   <div class = "div-owner">
     <div class = "div-image">
       <img  class = "image" src={{owner.image}}>
@@ -16,6 +16,7 @@ import { PostInterface } from 'src/app/interfaces/post-interface';
       <p class = "owner-user">{{owner.user}}</p>
     </div>
   </div>
+  </a>
   `,
   styleUrls: ['./owner.component.css']
 })
