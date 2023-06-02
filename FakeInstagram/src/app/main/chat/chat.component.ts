@@ -1,15 +1,19 @@
 import { Component, inject} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {Chat} from '../chat';
-import { ChatService } from '../chat.service';
+import {Chat} from '../../interfaces/chat';
+import { ChatService } from '../../services/chat.service';
+import { NavbarComponent } from "../discover/navbar/navbar.component";
+
 
 
 @Component({
   selector: 'app-chat',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NavbarComponent],
   template: `
-    
+  <p>
+      <app-navbar></app-navbar>
+  </p>  
   <section class="chat-window">
     <div class="callout" data-closable>
         <button class="close-button" aria-label="Close alert" type="button" data-close>
@@ -18,9 +22,14 @@ import { ChatService } from '../chat.service';
     </div>
     <h1>Chats</h1>
     <section class="chat" *ngFor="let chat of chats; let i = index"> 
-      <img class="chat-image" src="{{chat.image}}"   alt="image not found">
-      <h2 class="chat-name">{{chat.name}}</h2>
-      <p class="chat-last">{{chat.lastMessage}}</p>
+      <div>
+        <img class="chat-image" src="{{chat.image}}"   alt="image not found">
+      </div>
+      <div class="text-container">
+        <p class="chat-name">{{chat.name}}</p>
+        <p class="chat-last">{{ ((chat.lastMessage).length>30)? (chat.lastMessage | slice:0:30)+'...':(chat.lastMessage) }}</p> 
+      </div>
+
     </section>
   </section> 
 
