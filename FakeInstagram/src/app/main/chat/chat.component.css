@@ -1,0 +1,52 @@
+.chat-window{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;	
+
+
+}
+.chat{
+	
+	position:relative;
+    width: 90%;
+    height: 10%;
+    word-break: normal;
+    border-top: 1px solid gainsboro;
+    
+    
+}
+h1{
+    text-align: center;
+
+}
+
+
+
+.callout{
+  display: flex;
+  justify-content:end;
+  align-items: end;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  
+  
+}
+.close-button{
+    border: none;
+    background-color: white;
+}
+
+.chat-image{
+    width:50px;
+	border-radius:100%;
+	margin:15px;
+	float:left;
+    align-self: stretch;
+}
+
