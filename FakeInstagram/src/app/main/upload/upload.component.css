@@ -1,0 +1,46 @@
+
+.exit {
+	display: flex;
+	justify-content: flex-end;
+	text-decoration: none;
+	color: gray;
+	font-size: 20pt;
+}
+
+#content {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#button1 {
+	font-size: 20px;
+	height: 35pt;
+	margin-right: 5pt;
+	padding-left: 20pt;
+	padding-right: 20pt;
+	border-radius: 40pt;
+	color: white;
+	background: linear-gradient(to bottom left, #856980, #ff4d00);
+}
+
+#button2 {
+	font-size: 20px;
+	height: 35pt;
+	margin-right: 5pt;
+	padding-left: 20pt;
+	padding-right: 20pt;
+	border-radius: 40pt;
+	color: white;
+	background: linear-gradient(to bottom left, #ff01d5, #ff4d00);
+}
+
+#textbox {
+	border: 2pt solid black;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	width: 95%;
+	height: 70%;
+}

@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
 		<h3 class="navbarText">Search</h3>
 	</a>
 
-	<a class="button">
+	<a [routerLink]="['/UploadComponent']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="button">
 	<svg class="navbarIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
 		<h3 class="navbarText">Upload picture</h3>
 	</a>

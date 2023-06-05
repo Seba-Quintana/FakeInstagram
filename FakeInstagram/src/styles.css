@@ -1,4 +1,10 @@
 body {
 	height: 97vh;
 	width: 97vw;
+	font-family: "Comfortaa";
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url("assets/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
 }
